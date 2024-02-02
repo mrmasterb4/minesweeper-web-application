@@ -21,7 +21,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   min-height: 100%;
   min-width: 100%;
   flex-grow: 1;
@@ -113,15 +112,38 @@ body {
 
 #menu {
   width: 500px;
+  height: 100px;
   overflow: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
 
 #menuButton {
-  width: 100%;
   text-align: center;
   color: white;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 50px;
+}
+
+.glow {
+  font-size: 80px;
+  color: #grey;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px grey, 0 0 20px #fff, 0 0 30px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px grey, 0 0 30px #ff4da6, 0 0 30px #ff4da6;
+  }
 }
 
 #sizerinput, p, #menubutton, footer {

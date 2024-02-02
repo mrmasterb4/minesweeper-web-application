@@ -13,6 +13,7 @@ menu = document.createElement("div");
 menu.id = "menu";
 menuButt = document.createElement("p");
 menuButt.id = "menuButton";
+menuButt.className = "glow";
 menuButt.textContent = "Menu";
 menu.appendChild(menuButt);
 timer = document.createElement("p");
@@ -339,8 +340,4 @@ function checktile(tile, currentId) {
         click(newtile);
       }
     }, 10);
-  }
-
-footer = document.createElement("footer");
-footer.textContent = "Copyright @ MrMasterB4 2024";
-body.appendChild(footer);
+  };
