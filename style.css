@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  flex-direction: row;
+  justify-content: space-evenly;
+  order: -1;
+  align-items: center;
+  height: 100%;
+  background-image: url(minesweeperbackground.webp);
+}
+.checked {
+  background-color: white;
+  color: black;
+}
+
+#main {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+  min-width: 100%;
+  gap: 50px;
+  flex-grow: 1;
+}
+#container {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 500px;
+  gap: 0;
+  border: 5px solid #B933FF;
+}
+
+.vertical, .horizontal {
+  border: 1px solid white;
+}
+.vertical {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.horizontal {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.hidden {
+  display: none !important;
+}
+
+#sidepanel {
+  position: fixed; /* or absolute */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 200px;
+  background-color: black;
+  border: 5px solid #B933FF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+  padding: 20px;
+  /* Add more styling as needed */
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+#result {
+  position: fixed; /* or absolute */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  border: 5px solid #B933FF;
+  height: 10%;
+  width: 30%;
+  font-size: 50px;
+  gap: 5px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:#B933FF !important;
+  text-align: center;
+  /* Add more styling as needed */
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+#sizer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+#sizerinput {
+  text-align: center;
+  font-size: 30px;
+  width: 100%;
+}
+
+#menu {
+  width: 500px;
+}
+
+#menuButton {
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 50px;
+}
+
+#sizerinput, p, #menubutton, footer {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+p {
+  color: white;
+}
+
+#sidepanel > p {
+  font-size: 30px;
+}
+
+footer {
+  color: white;
+  text-align: center;
+}
