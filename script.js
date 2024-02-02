@@ -124,7 +124,7 @@ document.addEventListener("change", function(e) {
             }`;
             styleText.insertRule(st, 0);
             styleText.insertRule(st1, 0);
-            bombs = 99;
+            bombs = 180;
 
         }
         flagsLeft.innerHTML = bombs;
