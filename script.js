@@ -173,7 +173,8 @@ function StartGame() {
     const bombList = Array(bombs).fill('bomb');
     const validList = Array(sizerinput.value*sizerinput.value - bombs).fill('valid');
     const gametiles = validList.concat(bombList);
-    const ClassShuffled = gametiles.sort(() => Math.random() -0.5);
+    const ClassShuffled1 = gametiles.sort(() => Math.random() -0.5);
+    const ClassShuffled = ClassShuffled1.sort(() => Math.random() -0.5);
     width = parseInt(sizerinput.value);
     if (sizerinput.value <= 30) {
         var b = 0;
