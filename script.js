@@ -119,8 +119,8 @@ document.addEventListener("change", function(e) {
               font-size: 10px;
             }`;
             let st1 = `#container {
-              height: 700px !important;
-              width: 700px !important;
+              height: 600px !important;
+              width: 600px !important;
             }`;
             styleText.insertRule(st, 0);
             styleText.insertRule(st1, 0);
